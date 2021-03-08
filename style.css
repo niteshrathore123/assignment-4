@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #ffff;
+    font-family: 'Roboto', sans-serif;
+    justify-content: space-between;
+    padding: 70px;   
+}
+nav ul{
+    list-style: none;
+    display: flex;   
+}
+nav{
+   
+   background-color: #343a40; 
+   width: 100%;
+   position:fixed ;
+   font-size: 1.4rem;
+   min-height: 50px;
+   display: flex;
+   align-items: center;   
+}
+@media screen and (max-width:770px){
+    nav,ul{
+        align-items: center;
+        flex-direction: column;
+
+    }
+}
+
+ul li a:hover {
+    color:lightblue;
+}
+
+.slider{
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url(https://assets.ajio.com/medias/sys_master/images/images/hbb/h42/30870078783518/4032021-D-MHP-topbanner-p1-bbs-5090.jpg);
+    animation: carousal 25s infinite linear;
+}
+@keyframes carousal {
+    0%{
+        background-image: url('https://assets.ajio.com/medias/sys_master/images/images/hbb/h42/30870078783518/4032021-D-MHP-topbanner-p1-bbs-5090.jpg');
+    }
+    25%{
+        background-image: url('https://assets.ajio.com/medias/sys_master/images/images/h08/he2/31014797344798/08032021-D-mhp-topbanner-p4-brandday-flyingmachine-4060.jpg');
+    }
+    50%{
+        background-image: url('https://assets.ajio.com/medias/sys_master/images/images/h06/h11/31014797082654/08032021-d-mhp-stealoftheday-tees-min50extra30.jpg');
+    }
+    75%{
+        background-image: url('https://assets.ajio.com/medias/sys_master/images/images/hf0/h63/30870078849054/4032021-D-MHP-banner2-newseason-2050.jpg');
+    }
+}
+
+.container{
+    width: 99vw;
+    padding: 40px;
+    display: grid;
+    margin: 50px auto;
+    grid-template-columns: repeat(auto-fill,minmax(280px,335px));
+    grid-auto-rows: minmax(250px, auto);
+    gap: 30px;
+}
+
+.container div{
+   border: 1px solid black;
+   border-radius: 10px;
+}
+.container div img{
+   
+    width: 100%;
+    align-items: center;
+    height: 250px;
+    border-top-left-radius: 9px ;
+    border-top-right-radius: 9px ;
+
+}
+h2{
+    font-size: 1.8rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+p{
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p,h2{
+    text-align: center;
+    margin: 8px;
+    padding: 8px;
+}
+.container div:hover{
+    transform: scale(1.1);
+    transition: ease-out;
+    transition-duration: 1ms;
+}
+
+.col ul{
+    list-style: none;
+    
+}
+.col a{
+    text-decoration: none;
+    display: none;
+
+}
+.foot-container{
+    width: 100%;
+    margin: auto;
+}
+
+.footer{
+    background-color: #023047;
+    color: whitesmoke;
+    padding: 70px 0;
+    
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    width: 25%;
+    padding: 0 15px;
+}
+.col h4{
+    font-size: 1.1rem;
+    color: #ffff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 35px;
+    position: relative;
+
+}
+.col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbb;
+    transition: all 0.3s ease;
+}
+@media (max-width:767px){
+    .col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:550px){
+    .col{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
